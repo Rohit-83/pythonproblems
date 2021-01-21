@@ -18,7 +18,7 @@ print(list(num))
 #reduce
 #for using this function we have to import functools
 import functools
-a=functools.reduce(lambda i:i%3==0,list1)
-print(list(a))
+a=functools.reduce(lambda i,j:i+j+3 , list1)
+print(a)
 
 
