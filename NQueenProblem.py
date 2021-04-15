@@ -11,12 +11,23 @@ def is_attack(i, j):
     for k in range(0,N):
         if board[i][k]==1 or board[k][j]==1:
             return True
-    #checking diagonals
-    for k in range(0,N):
-        for l in range(0,N):
-            if (k+l==i+j) or (k-l==i-j):
-                if board[k][l]==1:
-                    return True
+    #checking left diagonals
+    r=i-1
+    c=j-1
+    while r>=0 and c>=0:
+      if board[i][j] == 1:
+        return True
+      r=r-1
+      c=c-1
+    #checking right diagonal
+    r1=i-1
+    c1=j+1
+    while r1>=0 and c1<N:
+      if board[r1][c1] == 1:
+        return True
+      r1=r1-1
+      c1=c1+1
+    
     return False
 
 def N_queen(n):
