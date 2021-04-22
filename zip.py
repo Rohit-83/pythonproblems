@@ -6,3 +6,5 @@ b = [3,4,5]
 #now we use list comprehension
 value = [x+y for x,y in zip(a,b)]
 print(value)
+
+
