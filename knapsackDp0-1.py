@@ -2,7 +2,7 @@
 #recursive function
 #memoization
 
-
+#first step is we we first make choice diagram after that recursive code and after that memoization
 #normal recursion code
 def knapsack(weights,profit,capacity,n):
   #base case
@@ -24,7 +24,8 @@ print(knapsack(weights,profit,capacity,n))
 
 #now we convert the recursive code into meoization
 #for memoization we have to make a matrix
-#where row and columns are the changable parameters
+#where row and columns are the changable parameters means
+#we have to observ from recursion fucntion which parameter is changing
 arr = []
 row = 4 #we take this value with the help of contstrains
 columns = 52 #this value also taken from constraints
