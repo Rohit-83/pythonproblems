@@ -56,7 +56,9 @@ print(knapsackm(weights,profit,capacity,n,arr))
 
 
 #now we solve this problem with top down approach
-t = []
+#in top down approch we didn't do  recursion
+
+t = []#creating array matrix for storing values 
 row = 4
 column = 52
 for i in range(row):
@@ -68,13 +70,13 @@ def knapsacktd(wt,value,W,arr):
   n =  len(wt)
   for i in range(1,n+1):
     for j in range(1,W+1):
-      if i == 0 or j == 0 :
+      if i == 0 or j == 0 :#matrix initializion with 0 
         t[i][j] = 0
       elif wt[i-1] <= j:
         t[i][j] = max(value[i-1]+t[i-1][j-wt[i-1]],t[i-1][j])
       elif wt[i-1]>j:
         t[i][j] = t[i-1][j]
-  return t[n][W]
+  return t[n][W]#for geeting the value we will last value of matrix
 
 
 wt = [10,20,30]
