@@ -2,7 +2,7 @@
 #we have been given an array and sum and we have to return count that how many subset are possible
 arr = [2,3,5,6,8,10]
 sum = 10 
-t = []
+t = []#creating the matrix
 n = len(arr)
 for i in range(n+1):
   col=[]
