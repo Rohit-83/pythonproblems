@@ -2,10 +2,10 @@
 #given an packet of change coins and a sum which we have to get
 coin = [2,1,3]
 value = 4
-#we have to find the max. no. of ways we can make value 10 by using given coin 
-#we can use coin more than one time so this is unbound knapsack 
+#we have to find the max. no. of ways we can make given value  by using given coin 
+#we can use coin more than one time(i.e. no restriction) so this is unbound knapsack 
 #this problem is similar to max. subset sum
-
+#like max subset sum we have to find the maximum posssible ways
 t = []
 n =len(coin)
 for i in range(n+1):
