@@ -2,7 +2,7 @@
 
 def powerset(input,output):
   if len(input) == 0:
-    print(output)
+    print(output,end="")
     return
   first = output
   second = output
@@ -13,8 +13,9 @@ def powerset(input,output):
     input = input[1:]
   powerset(input,first)
   powerset(input,second)
-  return
+  return ""
 
 input = "abcde"
 output = " "
-print(powerset(input,output))
+a = powerset(input,output)
+print(a)
